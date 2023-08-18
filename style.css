@@ -19,6 +19,10 @@ h2 {
     
 }
 
+.titulo-aula.texto-azul {
+    color: blue;
+}
+
 p {
     font-variant: small-caps;
     font-size: 1.4rem;

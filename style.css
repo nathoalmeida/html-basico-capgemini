@@ -9,6 +9,24 @@ body {
    
 }
 
+a {
+    color:darkslateblue;
+    cursor:context-menu;
+}
+
+a:active {
+    color:red;
+}
+
+a:visited {
+    color:gray;
+}
+
+a:hover {
+    color: deeppink;
+}
+
+
 h1, h2 {
     text-align: center;
     text-decoration: underline overline;

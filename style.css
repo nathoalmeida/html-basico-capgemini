@@ -1,11 +1,32 @@
 body {
-   color: #EE0000;
-   background-color: #000;
+    color: #EE0000;
+    background-color: #000;
     background-image: url("v7sa_2ggn_230508.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;
     background-size: cover;
+   
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: underline overline;
+    
+}
+
+header {
+    text-transform: uppercase;
+}
+
+main p {
+    text-indent: 2rem;
+    text-align: start;
+}
+
+p {
+    font-variant: small-caps;
+    font-size: 1.4rem;
 }
 
 @font-face {
@@ -23,7 +44,7 @@ h2 {
     color: blue;
 }
 
-p {
-    font-variant: small-caps;
-    font-size: 1.4rem;
+.lista-aulas {
+    letter-spacing: 1rem;
 }
+

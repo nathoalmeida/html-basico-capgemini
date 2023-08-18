@@ -8,3 +8,14 @@ body {
     background-size: cover;
 }
 
+@font-face {
+    font-family: adelia;
+    src: url('adelia.ttf');
+}
+
+h2 {
+    font-family: adelia, cursive;
+    font-size: 2rem;
+    
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Funções</title>
+
+    <script>
+
+        function acao() {
+            var texto = document.getElementsByTagName("h1")[0];
+            
+            texto.style.color = "#FF0000";
+            texto.style.fontSize = "20px";
+            
+            // Alterando conteúdo
+            texto.innerHTML = "Mensagem";
+        }
+
+        function alterarLink() {
+            var link = document.getElementsByTagName("a")[0];
+
+            link.href = "https://www.gmail.com"
+        }
+    </script>
+
+    
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <button onclick="acao()">Clique Aqui</button>
+    <br>
+    <a href="https://www.google.com.br">Um link</a>
+    <button onclick="alterarLink()">Altera o link</button>
+</body>
+</html>

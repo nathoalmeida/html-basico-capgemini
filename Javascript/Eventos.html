@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Funções</title>
+
+    <script>
+        function mensagem() {
+            alert("Você clicou no botão");
+        }
+
+        function alteracao() {
+            var curso = document.getElementById("cursos").value;
+            alert(curso);
+        }
+
+        function acao() {
+            var texto = document.getElementsByTagName("h1")[0];
+            alert(texto.innerHTML); // quando é o conteúdo de uma tag, se usa .innerHTML, quando tem um input, .value
+        }
+    </script>
+
+    
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <h1>Proway</h1>
+    <br>
+    <button onclick="acao()">Elementos H1</button>
+    <br>
+    <button onclick="mensagem()">Clique aqui</button>
+
+    <br><br>
+    <select onchange="alteracao()" id="cursos">
+        <option>Escolha seu curso</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Javascript</option>
+    </select>
+    <br><br>
+
+</body>
+</html>

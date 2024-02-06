@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Funções</title>
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!--SCRIPT-->
+    <script>
+       // No jQuery, os eventos ficam somente na tag script, não misturando com o html 
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("h1").html("Texto qualquer");
+            });
+        })
+    </script>
+    
+</head>
+<body>
+    <h1></h1>
+    <button>Clique Aqui</button>
+   
+</body>
+</html>
+

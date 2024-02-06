@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Funções</title>
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!--SCRIPT-->
+    <script>
+       // No jQuery, os eventos ficam somente na tag script, não misturando com o html 
+        $(document).ready(function() {
+            $("#ocultar").click(function() {
+                $("img").hide();
+            });
+
+            $("#exibir").click(function() {
+                $("img").show();
+            });
+
+            $("#duplo").click(function() {
+                if($("img").is(":hidden")) {
+                    $("img").show();
+                } else {
+                    $("img").hide();
+                }
+            })
+        })
+
+        /*
+         .fadeIn() ou .fadeOut() pode não ter parâmetro, parâmetro "slow" ou
+         colocar o tempo em mseg
+        */
+    </script>
+    
+</head>
+<body>
+    <h1></h1>
+    <button id="ocultar">Ocultar</button>
+    <button id="exibir">Exibir</button>
+    <button id="duplo">Duplo</button>
+    <br>
+    <img src="atencao-area-de-teste.jpg">
+</body>
+</html>
+
